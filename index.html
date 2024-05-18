@@ -10,15 +10,20 @@ body {
     font-size: 15px;
 }
 
+.tile-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+}
+
 .tile {
     background-color: white; 
     border: 1px solid #000000;
     border-radius: 20px;
-    float: left;
-    height: max-content;
-    margin: 15px;
     padding: 10px;
-    width: 200px
+    max-width: 200px;
+    overflow: hidden;
+    margin: 5px;
 }
 
 .tile:hover {
@@ -38,7 +43,6 @@ body {
     border-radius: 5px;
     float: left;
     font-size: 11px;
-    height: 15px;
     margin: 3px;
     padding: 5px;
     width: max-content;
